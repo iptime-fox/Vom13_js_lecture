@@ -12,7 +12,7 @@ console.log(typeof string);
 
 // 문자는 홀따옴표와 겹따옴표 어떤 것을 사용해도 되나, 따옴표 안에 다른 따옴표가 들어간다면 홀과 겹을 다르게 사용해야 한다.
 const string1 = "I'm a bear";
-console.log(string1);
+// console.log(string1);
 
 const className = 'header';
 // const tag = "<div class='" + className + "'></div>";
