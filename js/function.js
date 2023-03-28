@@ -1,4 +1,6 @@
 // 함수는 특정한 기능을 수행하도록 정의된 코드의 집합이다.
+// 기능의 모듈화 : 특정 기능을 하나로 정의하여 재사용
+// 함수는 정의 함수와 기정의 함수로 나뉜다
 
 // 1. 함수의 기본 형태(기명함수, 선언함수)
 // signiture : function(parameter){logics};
@@ -6,12 +8,47 @@
 // - 함수의 형태 : https://velog.io/@inyong_pang/JavaScript-Function%ED%95%A8%EC%88%98-7wk400kzxh
 // - 함수는 기본 형태, 함수 내부로 전달되는 파라미터, 내부에 정의된 값을 밖으로 내보내는 return으로 구성된다.
 
+// 정의부
+function printNm(name) {
+  console.log(name);
+}
+
+// 호출부
+printNm('나라');
+
+function sum(a, b) {
+  //형식 파라미터
+  return a + b;
+}
+
+console.log(sum(5, 9)); // 실제 파라미터
+// document.write(sum(6, 2));
+
 // n층짜리 별탑 찍기
+function stackTop(a) {
+  for (let i = 0; i < a; i++) {
+    for (let j = 0; j < i; j++) {
+      document.write('*');
+    }
+    document.write('<br>');
+  }
+}
+stackTop(27);
+
+// 누적 합계
+function sumNum(a) {
+  let sum = 0;
+  for (let i = 1; i <= a; i++) {
+    sum += i;
+  }
+  return sum;
+}
+document.write(sumNum(1000));
 
 // - 함수의 이름 식별자는 동사 형태로 작성한다 : ex) eventListener, startSlide...
 // - parameter(매개변수)는 호출 시 작성한 매개변수를 함수를 정의한 로직 내부에 전달하는 역할을 한다
 // - return(반환)은 함수 내부에서 작성한 결과값을 함수블럭 외부로 반환한다.
-// - 기본(선언형, 기명) 함수는 호이스팅된다.
+// - 기본(선언형, 기명) 함수는 호이스팅된다.(위에 호출해도 동작함!)
 
 // 2. 함수의 역할
 // - 반복되는 코드를 한 번만 정의하고 필요 시 호출하여 반복을 피한다
