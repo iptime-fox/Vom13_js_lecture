@@ -1,0 +1,12 @@
+*{margin: 0; padding: 0;box-sizing: border-box;}
+
+body{width: 100%; height: 100vh; background: rgb(199, 241, 135); position: fixed; left: 0;top: 0; display: flex; align-items: center; justify-content: center;}
+
+.wrapper{width: 60%;height: auto; display: flex; flex-direction: column;}
+
+.btns{width: 100%; height:auto; display: flex;  column-gap: 0.5rem; }
+.btn{width: 50%; height: 50px; font-size: 20px; padding: 1rem 0; border: 0; outline: 0; background: rgb(6, 160, 6); color: #fff;}
+
+.img-box{margin-top: 0.25rem; padding: 0.25rem; border: 1px solid #fff;}
+.img-box img{width: 100%; }
+
